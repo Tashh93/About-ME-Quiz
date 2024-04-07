@@ -47,12 +47,66 @@ html{
     background: radial-gradient(135deg, rgb(245, 194, 245), rgb(247, 166, 247), rgb(214,65,214));
 }
 body{
+    font-family: "Sansita Swashed", system-ui;
     text-align: center;
 }
 
-header{
-    text-align: left;
+main{
+    align-items: center;
+    justify-items: center;
 }
-.title{
-    font-family: "Permanent Marker", cursive;   
+
+header{
+    color: grey;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 2px 3px 4px whitesmoke;
+}
+
+.info-box{
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+    height: 120px;
+    margin: 25px 160px;
+    width: 930px;  
+}
+
+.title{ 
+    animation: textChange 2s infinite alternate, flash 4s infinite;
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+@keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes textChange {
+    from {color: grey;}
+    to{color: white;}
+}
+
+.instructions{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-shadow: 4px 7px 5px grey;
+}
+span{
+    color: grey;
+    font-weight: 600;
+}
+
+.hell{
+    color: white;
+    text-shadow: 4px 7px 5px grey;
 }
