@@ -65,7 +65,6 @@ header{
 
 .info-box{
     align-items: center;
-    border: 3px solid rgb(0, 0, 0);
     height: 120px;
     margin: 25px 160px;
     width: 930px;  
@@ -110,3 +109,49 @@ span{
     color: white;
     text-shadow: 4px 7px 5px grey;
 }
+
+form {
+        background: linear-gradient(210deg, grey,white,black);
+        border-radius: 10px;
+        box-shadow: 8px 20px 20px 12px rgb(68, 67, 67);
+        box-sizing: border-box; /* Include padding and border in the width and height */
+        display: flex;
+        flex-direction: column;
+        height: 1920px;
+        margin-left: 240px;
+        width: 703px;
+}
+    
+.radio-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin: 7px 0 20px 290px;
+    /* margin-bottom: 5px; Adjust spacing between radio buttons */
+}
+
+.radio-container input[type="radio"] {
+    margin-right: 5px; /* Adjust spacing between radio button and label */
+}
+
+input[type="number"]{
+    margin:3px 0px 10px 35px;
+    width: 45px;
+}
+
+label{
+    font-size: 18px;
+}
+
+button{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px grey;
+    color: rgb(247, 166, 247);
+    font-family: "Sansita Swashed", system-ui;
+    margin-bottom: 15px;   
+    margin-left: 255px;
+    outline: none;
+    padding: 10px;
+    width: 143px;
+}
+
