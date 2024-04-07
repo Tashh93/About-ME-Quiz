@@ -46,3 +46,13 @@ html{
     background-color: plum;
     background: radial-gradient(135deg, rgb(245, 194, 245), rgb(247, 166, 247), rgb(214,65,214));
 }
+body{
+    text-align: center;
+}
+
+header{
+    text-align: left;
+}
+.title{
+    font-family: "Permanent Marker", cursive;   
+}
