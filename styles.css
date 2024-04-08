@@ -150,10 +150,15 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-#age-error-message{
+input[type="number"]:focus{
     border: 1px solid red;
+}
+
+#age-error-message{
     color: red;
     display: none;
+    font-family: sans-serif;
+    font-size: 10px;
     padding: 5px;
 }
 
@@ -172,5 +177,51 @@ button{
     outline: none;
     padding: 10px;
     width: 143px;
+}
+
+@media screen and (max-width:375px){
+
+    header{
+        font-size: 19px;
+    }
+
+    main{
+        height: 1880px;
+        width: 375px;
+    }
+
+    .info-box{
+        margin: 25px 0px;
+        width: 400px;
+    }
+
+    .title{
+        animation: none;
+        font-size: 40px;
+    }
+
+    .instructions{
+        font-size: 17px;
+        margin-left: 34px;
+        width: 297px;
+    }
+
+    .hell{
+        display: none;
+    }
+
+    form{
+        height: 1735px;
+        margin-left: 30px;
+        width: 315px;
+    }
+
+    .radio-container{
+        margin: 7px 0px 14px 103px;
+    }
+
+    button{
+        margin-left: 83px;
+    }
 }
 

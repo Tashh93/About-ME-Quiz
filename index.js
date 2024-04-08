@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let message = "";
         if (percentage >= 60) {
-            message = `You scored ${score} out of ${totalQuestions}. You're at ${percentage}%. I love you!`;
+            message = `IKTR! You scored ${score} out of ${totalQuestions}. You're at ${percentage}%. I love you!`;
         } else {
-            message = `You scored ${score} out of ${totalQuestions}. You got ${percentage}%. Don't Call Me!`;
+            message = `Damn, You scored ${score} out of ${totalQuestions}. You got ${percentage}%. Don't Call Me!`;
         }
 
         // Display message to the user
@@ -75,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener to the submit button to grade the quiz
     document.getElementById("submit-button").addEventListener("click", gradeQuiz);
 
-    function submitForm(){
-        const form = document.getElementById("quiz-form");
-        event.preventDefault();
+    // function submitForm(){
+    //     const form = document.getElementById("quiz-form");
+    //     event.preventDefault();
     
-        gradeQuiz();
+    //     gradeQuiz();
     
-    }
+    // }
 });
 
 
