@@ -154,6 +154,10 @@ input[type="number"]:focus{
     border: 1px solid red;
 }
 
+input:invalid{
+    border-color: red;
+}
+
 #age-error-message{
     color: red;
     display: none;
