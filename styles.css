@@ -43,8 +43,8 @@ table {
 }
 
 html{
-    background-color: plum;
-    background: radial-gradient(135deg, rgb(245, 194, 245), rgb(247, 166, 247), rgb(214,65,214));
+    background-color: black;
+    background: linear-gradient(135deg, plum, rgb(228, 116, 228), rgb(212, 84, 212), rgb(199, 60, 199), rgb(219, 30, 219), rgb(153, 3, 153));
 }
 body{
     font-family: "Sansita Swashed", system-ui;
@@ -113,7 +113,7 @@ span{
 form {
         background: linear-gradient(210deg, grey,white,black);
         border-radius: 10px;
-        box-shadow: 8px 20px 20px 12px rgb(68, 67, 67);
+        box-shadow: 8px 20px 20px 12px black;
         box-sizing: border-box; /* Include padding and border in the width and height */
         display: flex;
         flex-direction: column;
@@ -174,12 +174,13 @@ button{
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 2px 3px 4px grey;
-    color: rgb(247, 166, 247);
+    color: black;
     font-family: "Sansita Swashed", system-ui;
     margin-bottom: 15px;   
-    margin-left: 255px;
+    margin-left: 260px;
     outline: none;
     padding: 10px;
+    cursor: grabbing;
     width: 143px;
 }
 
