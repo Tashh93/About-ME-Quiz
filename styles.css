@@ -138,6 +138,25 @@ input[type="number"]{
     width: 45px;
 }
 
+/* Removing arrows from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-clear-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#age-error-message{
+    border: 1px solid red;
+    color: red;
+    display: none;
+    padding: 5px;
+}
+
 label{
     font-size: 18px;
 }

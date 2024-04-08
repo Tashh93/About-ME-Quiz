@@ -21,23 +21,24 @@
             <p class="instructions">This quiz is designed to see how well you know little olee <span>MEEEE</span>! So with that being said, it's outta 10..let the games begin 😈</p>
             <p class="hell">🗣 SAY 👏 IT 👏 WITH 👏 ME...IF👏 YOU 👏 FAIL...GO STRAIGHT TO 🔥🔥🔥</p>
         </div>
-        <form action="mailto:l.bradford927@gmail.com" method="POST" enctype="text/plain">
+        <form id="quiz-form" action="#" method="POST" enctype="text/plain">
             <label for="question1">1. How Old Am I?</label>
             <div class="radio-container">
-                <input type="number" id="age" name="question1" min="22" max="35">
+                <input type="number" id="age" name="question1" min="22" max="35" required>
+                <span id="age-error-message">Please enter a valid number between 22 and 35!</span>
             </div>
 
             <label for="question2">2. What last name do I go by?</label>
-             <div class="radio-container">
-                <input type="radio" id="question2" name="lName" value="Bradford">
+            <div class="radio-container">
+                <input type="radio" id="question2" name="lName" value="bradford">
                 <label for="question2">Bradford</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question2" name="lName" value="McCorker">
+                <input type="radio" id="question2" name="lName" value="mccorker">
                 <label for="question2">McCorker</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question2" name="lName" value="Neither">
+                <input type="radio" id="question2" name="lName" value="neither">
                 <label for="question2">Neither</label>
             </div>
             <div class="radio-container">
@@ -70,15 +71,15 @@
                 <label for="question4">Chicago</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question4" name="city" value="chicago">
+                <input type="radio" id="question4" name="city" value="richton park">
                 <label for="question4">Richton Park</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question4" name="city" value="chicago">
+                <input type="radio" id="question4" name="city" value="dolton">
                 <label for="question4">Dolton</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question4" name="city" value="chicago">
+                <input type="radio" id="question4" name="city" value="roseland">
                 <label for="question4">Roseland</label>
             </div>
 
@@ -88,15 +89,15 @@
                 <label for="question5">Dre</label>
             </div>
             <div class="radio-container">  
-                <input type="radio" id="question5" name="nerves" value="dre">
+                <input type="radio" id="question5" name="nerves" value="deandre">
                 <label for="question5">DeAndre</label>
             </div>
             <div class="radio-container">
-                 <input type="radio" id="question5" name="nerves" value="dre">
-             <label for="question5">DreDay</label>
+                <input type="radio" id="question5" name="nerves" value="dreday">
+                <label for="question5">DreDay</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question5" name="nerves" value="dre">
+                <input type="radio" id="question5" name="nerves" value="dre!!!">
                 <label for="question5">DRE!!!</label>
             </div>
             <label for="question6">6. What age did I have De'Asia?</label>
@@ -149,8 +150,8 @@
                 <label for="question8">EVERY...SINGLE...DAY</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="question8" name="allday" value="allday">
-                 <label for="question8">All DAY EVERYDAY!!!</label>
+                <input type="radio" id="question8" name="allday" value="alldayeveryday">
+                <label for="question8">All DAY EVERYDAY!!!</label>
             </div>
 
             <label for="question9">9. If I could take away one of these items, which one would it be?</label>
@@ -188,13 +189,11 @@
                 <input type="radio" id="question10" name="middlename" value="Marie">
                 <label for="question10">Marie</label>
             </div>
-         
-          
-          
-
-            <button type="submit">Hope You're Ready</button>
+        
+            <button type="submit" id="submit-button" onclick="submitForm()">Hope You're Ready</button>
 
         </form>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
